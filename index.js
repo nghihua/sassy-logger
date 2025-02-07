@@ -1,13 +1,13 @@
 class SassyLogger {
     static log(message, level) {
       const prefixes = {
-        debug: "🔍 Just a little check-int",
+        debug: "🔍 Just a little check-in",
         info: "💤 It’s cute that you think this matters.",
-        warn: "😬 Oh no, how tragic",
+        warn: "🤡 Plot twist...",
         error: "🔥 Absolute disaster incoming",
-        oops: '😵 You tried',
-        blessed: '✨ The universe has smiled upon us',
         fatal: "💀 Hope you updated your will",
+        oops: '😬 That’s on you...',
+        blessed: '✨ The universe has smiled upon us',
       };
   
       const prefix = prefixes[level] || "🤷 Whatever";
@@ -19,6 +19,8 @@ class SassyLogger {
     static warn(msg) { this.log("warn", msg); }
     static error(msg) { this.log("error", msg); }
     static fatal(msg) { this.log("fatal", msg); }
+    static oops(msg) { this.log("oops", msg); }
+    static fatal(msg) { this.log("fatal", msg); } 
   }
   
   module.exports = SassyLogger;
