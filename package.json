@@ -1,6 +1,6 @@
 {
   "name": "sassy-logger",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Logger utility, but sassy",
   "main": "index.js",
   "scripts": {
